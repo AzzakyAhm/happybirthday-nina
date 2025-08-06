@@ -18,9 +18,9 @@
 
 <body>
 
-  <!-- Ganti source lagu di sini -->
-  <audio class="song" loop autoplay>
-    <source src="music/Hindia - semua lagu cinta terdengar sama.mp3" type="audio/mpeg" />
+  <!-- Musik otomatis -->
+  <audio id="bg-music" class="song" loop autoplay>
+    <source id="music-source" src="" type="audio/mpeg" />
     Your browser isn't invited for super fun audio time.
   </audio>
 
@@ -99,6 +99,13 @@
 
   <!-- Sweetalert -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <!-- Script untuk memilih lagu otomatis -->
+  <script>
+    // Pilih file lagu secara otomatis (gunakan file hindia.mpeg)
+    document.getElementById("music-source").src = "music/hindia.mpeg";
+    document.getElementById("bg-music").load();
+  </script>
 
   <!-- Main Script -->
   <script type="application/javascript" src="script/main.js"></script>
