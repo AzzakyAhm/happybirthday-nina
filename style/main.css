@@ -5,6 +5,7 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
+  background: linear-gradient(135deg, #ffe6f0, #ffb6c1, #ffcce0); /* Pink soft gradient */
 }
 
 .song {
